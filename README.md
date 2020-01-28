@@ -7,6 +7,7 @@ It works and confirmed following features:
   * Installed gems
   * Some Rails libraries (not perfect)
 * Automatically Linting and Formatting by Rubocop
+* Debug local file
 
 ## Confirmed versions
 
