@@ -11,4 +11,5 @@ gem "activesupport"
 group :development do
   gem 'rubocop'
   gem 'solargraph'
+  gem 'reek'
 end

@@ -8,13 +8,26 @@ GEM
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
     ast (2.4.0)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
     backport (1.1.2)
     benchmark (0.1.0)
+    codeclimate-engine-rb (0.4.1)
+      virtus (~> 1.0)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
     concurrent-ruby (1.1.5)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
     e2mmap (0.1.0)
+    equalizer (0.0.11)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+    ice_nine (0.11.2)
     jaro_winkler (1.5.4)
+    kwalify (0.7.2)
     maruku (0.7.3)
     mini_portile2 (2.4.0)
     minitest (5.14.0)
@@ -23,7 +36,14 @@ GEM
     parallel (1.19.1)
     parser (2.7.0.2)
       ast (~> 2.4.0)
+    psych (3.1.0)
     rainbow (3.0.0)
+    reek (5.6.0)
+      codeclimate-engine-rb (~> 0.4.0)
+      kwalify (~> 0.7.0)
+      parser (>= 2.5.0.0, < 2.8, != 2.5.1.1)
+      psych (~> 3.1.0)
+      rainbow (>= 2.0, < 4.0)
     reverse_markdown (1.4.0)
       nokogiri
     rubocop (0.79.0)
@@ -54,6 +74,11 @@ GEM
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
     unicode-display_width (1.6.1)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
     yard (0.9.24)
     zeitwerk (2.2.2)
 
@@ -62,8 +87,9 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  reek
   rubocop
   solargraph
 
 BUNDLED WITH
-   1.16.6
+   1.17.3
